@@ -6,13 +6,17 @@ import { FormsModule } from '@angular/forms'; // <-- NgModel lives here
 import { AppComponent } from './app.component';
 import { HeroesComponent } from './heroes/heroes.component';
 import { TestComponentComponent } from './test-component/test-component.component';
+import { TestComponetDetailComponent } from './test-componet-detail/test-componet-detail.component';
+import { TestDetailComponent } from './test-detail/test-detail.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HeroesComponent,
-    TestComponentComponent
+    TestComponentComponent,
+    TestComponetDetailComponent,
+    TestDetailComponent
   ],
   imports: [
     BrowserModule,
