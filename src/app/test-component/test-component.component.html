@@ -1,0 +1,15 @@
+<ul class="heroes">
+  <li  *ngFor="let hero of test" [class.selected]="hero === selectedTest" (click)="onSelect(hero)">
+    <span class="badge">{{hero.id}}</span> {{hero.name}}
+  </li>
+</ul>
+<div *ngIf="selectedTest">
+  <h2>{{ selectedTest.name | uppercase }} Details</h2>
+  <div><span>id: </span>{{selectedTest.id}}</div>
+  <div>
+    <label>name:
+      <input [(ngModel)]="selectedTest.name" placeholder="name">
+    </label>
+  </div>
+</div>
+
