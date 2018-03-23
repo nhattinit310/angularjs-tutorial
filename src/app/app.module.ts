@@ -8,6 +8,7 @@ import { HeroesComponent } from './heroes/heroes.component';
 import { TestComponentComponent } from './test-component/test-component.component';
 import { TestComponetDetailComponent } from './test-componet-detail/test-componet-detail.component';
 import { TestDetailComponent } from './test-detail/test-detail.component';
+import { HeroService } from './hero.service';
 
 
 @NgModule({
@@ -22,7 +23,9 @@ import { TestDetailComponent } from './test-detail/test-detail.component';
     BrowserModule,
     FormsModule
   ],
-  providers: [],
+  providers: [
+    HeroService,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
