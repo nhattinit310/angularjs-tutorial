@@ -1,13 +1,14 @@
+
 import { Component, OnInit } from '@angular/core';
 import { testComponent } from '../testComponent';
 import { HeroService } from '../hero.service';
 @Component({
-  selector: 'app-test-component',
-  templateUrl: './test-component.component.html',
-  styleUrls: ['./test-component.component.css']
-
+  selector: 'app-dashboard',
+  templateUrl: './dashboard.component.html',
+  styleUrls: ['./dashboard.component.css']
 })
-export class TestComponentComponent implements OnInit {
+export class DashboardComponent implements OnInit {
+
 
   //testComponent: testComponent[];
   selectedTest: testComponent;
