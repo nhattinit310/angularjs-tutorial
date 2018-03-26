@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input} from '@angular/core';
 import { testComponent } from '../testComponent';
-import { Component, OnInit, Input } from '@angular/core';
+
 @Component({
   selector: 'app-test-componet-detail',
   templateUrl: './test-componet-detail.component.html',

@@ -1,6 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import {testComponent} from "../testComponent";
 import { Component, OnInit, Input } from '@angular/core';
+import {testComponent} from '../testComponent';
 @Component({
   selector: 'app-test-detail',
   templateUrl: './test-detail.component.html',
@@ -8,7 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class TestDetailComponent implements OnInit {
 
-  @Input() hero : testComponent;
+  @Input() hero: testComponent;
   constructor() { }
 
   ngOnInit() {

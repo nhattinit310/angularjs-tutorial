@@ -5,23 +5,24 @@ import { HeroService } from '../hero.service';
   selector: 'app-test-component',
   templateUrl: './test-component.component.html',
   styleUrls: ['./test-component.component.css']
+
 })
 export class TestComponentComponent implements OnInit {
 
   selectedTest: testComponent;
-  test = testComponent[];
-  constructor(private heroService: HeroService) { }
+  test: testComponent[];
+  constructor(private heroService: HeroService) {}
 
   ngOnInit() {
-    this.getHeroes();
+    // this.getHeroes();
   }
-  onSelect(test: testComponent): void{
+  getHeroes(): void {
+    this.test = this.heroService.getHeores();
+  }
+
+  onSelect(test: testComponent): void {
     this.selectedTest = test;
   }
 
-  getHeroes(): void {
-    this.heroService.getHeroes()
-        .subscribe(heroes => this.test = heroes);
-  }
 
 }
